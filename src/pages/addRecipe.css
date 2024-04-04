@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+li {
+    font-weight: 400;
+}
+input[type="file"] {
+    display: none;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1300px;
+    height: 480px;
+    border: 2px solid #f6f5f4;
+    font-size: 24px;
+    font-weight: 500;
+    color: #666666;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+label:hover,
+label:active {
+    border: 2px solid #7c7771;
+}
+
+.form-control-addRecipe {
+    border: none;
+}
+
+.form-control-addRecipe:hover {
+    border: 2px solid #7c7771;
+}
+.textArea-control-addRecipe {
+    border: none;
+}
+
+.main-add {
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.main-div-add {
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 100px;
+    margin-top: 70px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    height: 100%;
+}
+.register-nav {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2e266f;
+}
+.login-nav {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2e266f;
+}
+.search-menu-nav {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2e266f;
+}
+
+.nav-rigth {
+    width: 210px;
+    height: 97px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-left: 5px solid #efc81a;
+}
+
+.nav-photo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-add {
+    width: fit-content;
+    height: 120vh;
+    margin-left: 11vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.button-post-add {
+    width: 426px;
+    height: 64px;
+    border-radius: 6px;
+    border: none;
+    background-color: #efc81a;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.button-post-add:hover {
+    background-color: #f37600;
+}
+.button-comment-add:focus {
+    background-color: #f37600;
+}

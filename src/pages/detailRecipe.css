@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+li {
+    font-weight: 400;
+}
+
+.main-div-detail {
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 100px;
+    margin-top: 70px;
+}
+.main-detail-card {
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.nav-right-detail {
+    width: 210px;
+    height: 97px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 5px solid #efc81a;
+    text-decoration: none;
+}
+
+.nav-photo-detail {
+    display: flex;
+    align-items: center;
+}
+
+.nav-text-detail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100;
+}
+
+.section-detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.article-detail {
+    margin-left: 96px;
+    margin-top: 110px;
+}
+.article2-detail {
+    padding-left: 20px;
+    margin-top: 10vh;
+}
+
+.comment-section-detail {
+    width: 1490px;
+    height: 50vh;
+    border-top: 5px solid #efc81a;
+    border-bottom: 5px solid #efc81a;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.button-comment {
+    width: 426px;
+    height: 64px;
+    border-radius: 6px;
+    background-color: #ffb167;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+}
+
+.button-comment:hover {
+    background-color: #f37600;
+}
+.button-comment:focus {
+    background-color: #f37600;
+}

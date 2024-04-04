@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+li {
+    font-weight: 400;
+    font-size: 36px;
+}
+input[type="file"] {
+    display: none;
+}
+.textArea-control-editRecipe {
+    border: none;
+}
+
+.textArea-control-editRecipe:hover {
+    border: 2px solid #7c7771;
+}
+
+.labelEdit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 906px;
+    height: 480px;
+    border: 2px solid #f6f5f4;
+    font-size: 24px;
+    font-weight: 500;
+    color: #666666;
+    border-radius: 15px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.labelEdit:hover,
+.labelEdit:active {
+    border: 2px solid #7c7771;
+}
+
+input:hover {
+    border: 2px solid #7c7771;
+}
+textarea:hover {
+    border: 2px solid #7c7771;
+}
+select:hover {
+    border: 2px solid #7c7771;
+}
+
+.main-div-edit {
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 100px;
+    margin-top: 70px;
+}
+.main-edit {
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    height: 100%;
+}
+.register-nav {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #2e266f;
+}
+.login-nav {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #2e266f;
+}
+.search-menu-nav {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #2e266f;
+}
+
+.nav-rigth {
+    width: 210px;
+    height: 97px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-left: 5px solid #efc81a;
+}
+
+.nav-photo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-edit {
+    width: fit-content;
+    height: 120vh;
+    margin-left: 11vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.button-post {
+    width: 426px;
+    height: 64px;
+    border-radius: 6px;
+    border: none;
+    background-color: #efc81a;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+}
+
+.footer {
+    margin-top: 15vh;
+    width: 99vw;
+    height: 685px;
+    background-color: #efc81a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.footer-text {
+    margin-top: 30vh;
+}
+
+.footer-text-end {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.button-post:hover {
+    background-color: #f37600;
+}
+.button-comment:focus {
+    background-color: #f37600;
+}
+
+.image-editRecipe {
+    justify-content: center;
+    align-items: center;
+    width: 906px;
+    height: 480px;
+    border: 2px solid #f6f5f4;
+    font-size: 24px;
+    font-weight: 500;
+    color: #666666;
+    border-radius: 15px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    object-fit: cover;
+}
