@@ -12,6 +12,7 @@ import { getRecipeDetail, updateRecipe } from "../redux/action/recipes";
 export default function EditRecipe() {
     const recipeDetail = useSelector((state) => state.recipes_detail);
     const recipeUpdate = useSelector((state) => state.recipes_update);
+    const userToken = useSelector((state) => state?.auth?.data?.access_token);
     const dispatch = useDispatch();
     const { id } = useParams();
     const navigate = useNavigate();
@@ -36,7 +37,7 @@ export default function EditRecipe() {
         bodyData.append("category_id", inputData.category_id);
         bodyData.append("photo", photo);
 
-        dispatch(updateRecipe(id, bodyData, navigate));
+        dispatch(updateRecipe(id, bodyData, navigate, userToken));
     };
     const onChange = (e) => {
         setInputData({ ...inputData, [e.target.name]: e.target.value });

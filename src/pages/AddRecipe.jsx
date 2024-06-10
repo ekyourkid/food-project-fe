@@ -12,6 +12,7 @@ import { useEffect } from "react";
 export default function AddRecipe() {
     const dispatch = useDispatch();
     const recipes_post = useSelector((state) => state.recipes_post);
+    const tokenUser = useSelector((state) => state?.auth?.data?.access_token);
     const navigate = useNavigate();
     const [photo, setPhoto] = useState();
     const [inputData, setInputData] = useState({
@@ -29,7 +30,7 @@ export default function AddRecipe() {
         bodyData.append("category_id", inputData.category_id);
         bodyData.append("photo", photo);
 
-        dispatch(postRecipe(bodyData, navigate));
+        dispatch(postRecipe(bodyData, navigate, tokenUser));
     };
     const onChange = (e) => {
         setInputData({ ...inputData, [e.target?.id]: e.target.value });

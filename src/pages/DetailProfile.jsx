@@ -12,6 +12,7 @@ import { useParams } from "react-router-dom";
 export default function DetailProfile() {
     const authdata = useSelector((state) => state.auth.data);
     const dispatch = useDispatch();
+    const userToken = useSelector((state) => state?.auth?.data?.access_token);
     const recipes = useSelector((state) => state.recipes);
     const { id } = useParams();
 
@@ -195,7 +196,10 @@ export default function DetailProfile() {
                                               <button
                                                   onClick={() =>
                                                       dispatch(
-                                                          deleteRecipe(item.id)
+                                                          deleteRecipe(
+                                                              item.id,
+                                                              userToken
+                                                          )
                                                       )
                                                   }
                                                   style={{
